@@ -1,0 +1,57 @@
+	^ANCILLARY_STRUCTURE     = "header.fmt"
+
+	OBJECT			= COLUMN
+	  NAME			= GPS_DATE
+	  COLUMN_NUMBER 	= 1
+	  DATA_TYPE 		= CHAR
+	  BYTES 		= 1
+	  ITEMS			= 15
+	  DESCRIPTION	 	= "The gps time represented with 26 characters"
+	END_OBJECT		= COLUMN
+	
+	OBJECT			= COLUMN
+	  NAME			= GPS_SATS
+	  COLUMN_NUMBER 	= 2
+	  DATA_TYPE 		= UNSIGNED_INTEGER
+	  BYTES 		= 4
+	  DESCRIPTION	 	= "The number of GPS satalites used to calculate
+				   the gps location"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= TRACE_LONGITUDE
+	  COLUMN_NUMBER 	= 3
+	  DATA_TYPE 		= FLOAT
+	  BYTES 		= 4
+	  UNITS 		= DEGREES
+	  DESCRIPTION	 	= "Longitudal location of the trace"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= TRACE_LATITUDE
+	  COLUMN_NUMBER 	= 5
+	  DATA_TYPE 		= FLOAT
+	  BYTES 		= 4
+	  UNITS			= DEGREES
+	  DESCRIPTION	 	= "Latitude location of the trace"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= ALTITUDE
+	  COLUMN_NUMBER 	= 7
+	  DATA_TYPE 		= FLOAT
+	  BYTES 		= 4
+	  UNITS			= METERS
+	  DESCRIPTION	 	= "The elevation of the aircraft when taking this
+				   trace"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= ECHO_SAMPLES
+	  COLUMN_NUMBER 	= 8
+	  DATA_TYPE 		= FLOAT
+	  BYTES 		= 4
+	  ITEMS			= "TRACE_TIME_LENGTH * RECEIVER_SAMPLING_FREQUENCY"
+	  DESCRIPTION	 	= "Array of all the samples received in the trace"
+	END_OBJECT		= COLUMN
+

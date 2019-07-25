@@ -1,0 +1,92 @@
+ VERSION			= 0.1
+
+	OBJECT			= COLUMN
+	  NAME			= CHIRP_BANDWIDTH
+	  COLUMN_NUMBER 	= 1
+	  DATA_TYPE 		= FLOAT
+	  START_BYTE 		= 1
+	  BYTES 		= 4
+	  UNITS 		= PERCENTAGE
+	  DESCRIPTION	 	= "The bandwidth of the chirp"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= CENTER_FREQUENCY
+	  COLUMN_NUMBER 	= 2
+	  DATA_TYPE 		= FLOAT
+	  START_BYTE 		= 5
+	  BYTES 		= 4
+	  UNITS 		= HERTZ
+	  DESCRIPTION	 	= "The center frequency of the chirp"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= CHIRP_TIME_LENGTH
+	  COLUMN_NUMBER 	= 3
+	  DATA_TYPE 		= FLOAT
+	  START_BYTE 		= 9
+	  BYTES 		= 4
+	  UNITS 		= SECONDS
+	  DESCRIPTION	 	= "The total time length the chirp spans"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= AMPLITUDE
+	  COLUMN_NUMBER 	= 4
+	  DATA_TYPE 		= FLOAT
+	  START_BYTE 		= 13
+	  BYTES 		= 4
+	  UNITS			= dBm
+	  DESCRIPTION	 	= "The amplitude of the chirp"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= PULSE_REPETITION_FREQUENCY
+	  COLUMN_NUMBER 	= 5
+	  DATA_TYPE 		= FLOAT
+	  START_BYTE 		= 17
+	  BYTES 		= 4
+	  UNITS			= HERTZ
+	  DESCRIPTION	 	= "The frequency each chirp repeats at"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= TRANSMIT_SAMPLING_FREQUENCY
+	  COLUMN_NUMBER 	= 6
+	  DATA_TYPE 		= FLOAT
+	  START_BYTE 		= 21
+	  BYTES 		= 4
+	  UNITS 		= HERTZ
+	  DESCRIPTION	 	= "The transmittion chirp sampling frequency"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= RECEIVER_SAMPLING_FREQUENCY
+	  COLUMN_NUMBER 	= 7
+	  DATA_TYPE 		= FLOAT
+	  START_BYTE 		= 25
+	  BYTES 		= 4
+	  UNITS 		= HERTZ
+	  DESCRIPTION	 	= "The received signal sampling frequency"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= TRACE_TIME_LENGTH
+	  COLUMN_NUMBER 	= 8
+	  DATA_TYPE 		= FLOAT
+	  START_BYTE 		= 29
+	  BYTES 		= 4
+	  UNITS			= SECONDS
+	  DESCRIPTION	 	= "The lenght of time the received trace spans"
+	END_OBJECT		= COLUMN
+
+	OBJECT			= COLUMN
+	  NAME			= STACK_SIZE
+	  COLUMN_NUMBER 	= 9
+	  DATA_TYPE 		= UNSIGNED_INTEGER
+	  START_BYTE 		= 33
+	  BYTES 		= 4
+	  UNITS			= HERTZ
+	  DESCRIPTION	 	= "the number of traces to add together"
+	END_OBJECT		= COLUMN
+
