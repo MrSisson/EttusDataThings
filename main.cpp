@@ -14,8 +14,8 @@ int saveTrace(FILE* dataFile, float *data, std::string nmea, int traceLen);
 
 int main(int argc,char* argv[]) {
 
-    FILE* outFile;
-    //std::cout << "HELLO" << std::endl;
+    FILE* outFile = NULL;
+    std::cout << "HELLO" << std::endl;
     if (argc == 2) {
         outFile = fopen(argv[1], "wb");
         std::cout << "file: " << argv[1] << std::endl;
@@ -79,7 +79,7 @@ int saveTrace(FILE* dataFile, float *data, std::string nmea, int traceLen) {
     // date << gmtm->tm_mon + 1 << ':'
     //      << gmtm->tm_year + 1900 << '-';
     
- 
+    
     std::string temp;
     int sectStrt = 0;
     int cnt = 0;
