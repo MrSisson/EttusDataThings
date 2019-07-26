@@ -52,5 +52,6 @@
         "memory": "cpp",
         "optional": "cpp",
         "string_view": "cpp"
-    }
+    },
+    "python.linting.enabled": false
 }
