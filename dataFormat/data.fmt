@@ -5,8 +5,8 @@
 	  COLUMN_NUMBER 	= 1
 	  DATA_TYPE 		= CHAR
 	  BYTES 		= 1
-	  ITEMS			= 15
-	  DESCRIPTION	 	= "The gps time represented with 26 characters"
+	  ITEMS			= 13
+	  DESCRIPTION	 	= "The gps time represented with 13 characters"
 	END_OBJECT		= COLUMN
 	
 	OBJECT			= COLUMN
